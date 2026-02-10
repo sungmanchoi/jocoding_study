@@ -1,1 +1,31 @@
-/* Add styles here */
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  background: none;
+  color: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+body.dark .theme-toggle {
+  border-color: #f0f0f0;
+}
